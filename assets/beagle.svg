@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" role="img">
+  <title>Beagle illustration</title>
+  <ellipse cx="242" cy="342" rx="142" ry="17" fill="#d8d8c7"/>
+  <path d="M154 209c-23 25-34 59-30 103l5 30h175l4-34c6-45-8-79-32-101z" fill="#f1c76f"/>
+  <path d="M158 208c-9 35-8 86 3 134h48c-9-42-5-99 12-128zM275 211c17 34 22 83 15 131h-47c9-39 7-92-5-128z" fill="#fff8e9"/>
+  <path d="M132 226c-28 30-43 52-42 76 1 15 14 21 25 13 16-12 21-34 29-54" fill="none" stroke="#805743" stroke-linecap="round" stroke-width="17"/>
+  <path d="M154 210c-16 26-20 51-10 65 13 17 41 14 59 3l-8-75zM277 210c24 16 38 38 29 55-9 17-36 19-58 9l3-72z" fill="#765344"/>
+  <path d="M158 103c0-40 35-68 83-68s83 28 83 68v45c0 52-38 89-83 89s-83-37-83-89z" fill="#efc472"/>
+  <path d="M166 99c-26-17-47-5-52 20-8 38 9 84 37 92 17 5 29-16 31-42zM317 99c26-17 47-5 52 20 8 38-9 84-37 92-17 5-29-16-31-42z" fill="#795645"/>
+  <path d="M242 52c-40 0-70 22-78 53 10-8 24-11 36-5 12 6 18 18 20 31h45c2-13 8-25 20-31 12-6 26-3 36 5-8-31-38-53-79-53z" fill="#fff8e9"/>
+  <path d="M204 144c0-10 7-16 15-16s15 6 15 16v20h-30zM250 144c0-10 7-16 15-16s15 6 15 16v20h-30z" fill="#fff8e9"/>
+  <ellipse cx="219" cy="148" rx="5" ry="7" fill="#343a34"/>
+  <ellipse cx="265" cy="148" rx="5" ry="7" fill="#343a34"/>
+  <path d="M215 178c8-19 46-19 55 0 4 9-9 24-27 24s-32-15-28-24z" fill="#fff8e9"/>
+  <path d="M234 180c0-7 5-11 11-11s11 4 11 11c0 7-6 10-11 10s-11-3-11-10z" fill="#493d39"/>
+  <path d="M245 191v8m0 0c-7 8-16 8-23 1m23-1c7 8 16 8 23 1" fill="none" stroke="#493d39" stroke-linecap="round" stroke-width="3"/>
+  <path d="M205 230c25 17 54 17 78 0" fill="none" stroke="#f5e5b5" stroke-linecap="round" stroke-width="8"/>
+  <circle cx="284" cy="236" r="8" fill="#c87852"/>
+</svg>

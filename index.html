@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet three popular dog breeds and learn the basics of caring for them.">
+  <title>Virtual Dog Park | Meet the Breeds</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Virtual Dog Park home">
+      <span class="wordmark-mark" aria-hidden="true">V</span>
+      <span>Virtual Dog Park</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#encyclopedia">Dog encyclopedia</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome" id="home" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <p class="eyebrow">A good place to start</p>
+        <h1 id="welcome-title">Every dog has a story. <span>Meet yours.</span></h1>
+        <p class="welcome-text">Welcome to the Virtual Dog Park: a friendly little guide to getting to know dogs. Start with three much-loved breeds and learn what makes each one special.</p>
+        <a class="text-link" href="#encyclopedia">Meet the breeds <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="welcome-art">
+        <span class="art-note">Good dogs, good company</span>
+        <img src="assets/beagle.svg" alt="Illustration of a Beagle." width="480" height="380">
+        <span class="art-number" aria-hidden="true">01</span>
+      </div>
+    </section>
+
+    <section class="encyclopedia" id="encyclopedia" aria-labelledby="encyclopedia-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The dog encyclopedia</p>
+          <h2 id="encyclopedia-title">Three breeds to know</h2>
+          <p class="section-intro">A few helpful details about size, personality, and everyday care.</p>
+        </div>
+        <div class="breed-search">
+          <label for="breed-search">Find a breed</label>
+          <input id="breed-search" type="search" placeholder="Try “Beagle”" autocomplete="off">
+          <p class="search-status" id="search-status" aria-live="polite">Showing all 3 breeds</p>
+        </div>
+      </div>
+
+      <div class="breed-list" id="breed-list">
+        <article class="breed-entry beagle-entry" data-breed="beagle" aria-labelledby="beagle-title">
+          <div class="breed-art">
+            <img src="assets/beagle.svg" alt="Illustration of a Beagle." width="480" height="380" loading="lazy">
+            <span class="breed-index" aria-hidden="true">01 / 03</span>
+          </div>
+          <div class="breed-copy">
+            <p class="breed-kind">The cheerful explorer</p>
+            <h3 id="beagle-title">Beagle</h3>
+            <p class="breed-summary">A small hound with a curious nose and a big sense of adventure.</p>
+            <dl class="breed-facts">
+              <div><dt>Size</dt><dd>Small to medium; sturdy and compact.</dd></div>
+              <div><dt>Personality</dt><dd>Friendly, curious, and happiest with company.</dd></div>
+              <div><dt>Everyday care</dt><dd>Give daily walks, sniffing games, and patient training.</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="breed-entry golden-entry" data-breed="golden retriever" aria-labelledby="golden-title">
+          <div class="breed-art">
+            <img src="assets/golden-retriever.svg" alt="Illustration of a Golden Retriever." width="480" height="380" loading="lazy">
+            <span class="breed-index" aria-hidden="true">02 / 03</span>
+          </div>
+          <div class="breed-copy">
+            <p class="breed-kind">The sunny companion</p>
+            <h3 id="golden-title">Golden Retriever</h3>
+            <p class="breed-summary">A gentle, people-loving dog who often brings a toy along.</p>
+            <dl class="breed-facts">
+              <div><dt>Size</dt><dd>Large; strong, athletic, and fluffy.</dd></div>
+              <div><dt>Personality</dt><dd>Kind, social, and keen to learn.</dd></div>
+              <div><dt>Everyday care</dt><dd>Plan for active play, regular brushing, and time together.</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="breed-entry poodle-entry" data-breed="poodle" aria-labelledby="poodle-title">
+          <div class="breed-art">
+            <img src="assets/poodle.svg" alt="Illustration of a Poodle." width="480" height="380" loading="lazy">
+            <span class="breed-index" aria-hidden="true">03 / 03</span>
+          </div>
+          <div class="breed-copy">
+            <p class="breed-kind">The bright learner</p>
+            <h3 id="poodle-title">Poodle</h3>
+            <p class="breed-summary">A clever, lively dog known for its curly coat and graceful steps.</p>
+            <dl class="breed-facts">
+              <div><dt>Size</dt><dd>Comes in toy, miniature, and standard sizes.</dd></div>
+              <div><dt>Personality</dt><dd>Smart, playful, and closely bonded with family.</dd></div>
+              <div><dt>Everyday care</dt><dd>Keep the coat groomed and make room for games and learning.</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+      <p class="empty-message" id="empty-message" hidden>No breed found. Try Beagle, Golden Retriever, or Poodle.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made for curious dog people.</p>
+    <a href="#home">Back to the top ↑</a>
+  </footer>
+</body>
+</html>
