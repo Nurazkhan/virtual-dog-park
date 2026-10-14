@@ -15,6 +15,7 @@
       <span>Virtual Dog Park</span>
     </a>
     <nav aria-label="Main navigation">
+      <a href="#my-dog">My Virtual Dog</a>
       <a href="#encyclopedia">Dog encyclopedia</a>
     </nav>
   </header>
@@ -101,6 +102,49 @@
         </article>
       </div>
       <p class="empty-message" id="empty-message" hidden>No breed found. Try Beagle, Golden Retriever, or Poodle.</p>
+    </section>
+
+    <section class="my-dog" id="my-dog" aria-labelledby="my-dog-title">
+      <p class="eyebrow">Your new best friend</p>
+      <h2 id="my-dog-title">My Virtual Dog</h2>
+      <p class="section-intro">Choose a breed and a name to welcome a dog to your park.</p>
+
+      <form class="adoption-form" id="adoption-form" novalidate>
+        <div class="form-field">
+          <label for="dog-name">Dog's name</label>
+          <input id="dog-name" name="dogName" type="text" maxlength="20" required autocomplete="off" aria-describedby="name-help name-error">
+          <span class="field-help" id="name-help">Up to 20 characters.</span>
+          <span class="field-error" id="name-error" role="alert"></span>
+        </div>
+        <div class="form-field">
+          <label for="dog-breed">Choose a breed</label>
+          <select id="dog-breed" name="dogBreed">
+            <option value="Beagle">Beagle</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Poodle">Poodle</option>
+          </select>
+        </div>
+        <button class="park-button" type="submit">Adopt</button>
+      </form>
+
+      <article class="dog-profile" id="dog-profile" aria-live="polite" hidden>
+        <img class="profile-image" id="profile-image" src="assets/beagle.svg" alt="" width="200" height="160">
+        <div class="profile-copy">
+          <p class="breed-kind">Welcome to the park</p>
+          <h3><span id="profile-name"></span></h3>
+          <dl class="profile-facts">
+            <div><dt>Breed</dt><dd id="profile-breed"></dd></div>
+            <div><dt>Day</dt><dd id="profile-day">1</dd></div>
+            <div><dt>Growth stage</dt><dd id="profile-stage">Puppy</dd></div>
+            <div><dt>Happiness</dt><dd><span id="profile-happiness">50</span> / 100</dd></div>
+          </dl>
+          <div class="care-buttons" aria-label="Care for your dog">
+            <button class="park-button secondary-button" id="feed-button" type="button">Feed</button>
+            <button class="park-button secondary-button" id="play-button" type="button">Play</button>
+          </div>
+          <p class="care-message" id="care-message" aria-live="polite"></p>
+        </div>
+      </article>
     </section>
   </main>
 
